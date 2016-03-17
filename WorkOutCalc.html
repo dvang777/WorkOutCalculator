@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=ege">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="cssfiles/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="WorkOutCalc.css">
+	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Raleway:500' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+	<h1 class="header">Workout Calculator</h1>
+
+	<input class = "txtbx"type="text" value= "Enter Name" id="txtbox"/>
+	<input class = "txtbx" type="text" value= "Enter Weight" id="txtbox_weight"/>
+ 	<input type="button" value="Enter" onclick="main()"/>
+
+	<script src="jsfiles/jquery.js"></script>
+
+	<table class = "myTable" align="center">
+
+		<th>Name</th>
+		<th>Workouts</th>
+		<th>Calories Per Workout</th>
+	</table>
+
+	<table class="wrapper"align="center">
+		<th>Total Calories</th>
+		<td type ="text" id = "totalCalBurned"></td>		
+	</table>
+	<table class="wrapper"align="center">
+		<th>Total Workout Time (in minutes)</th>
+		<td type ="text" id = "totalMins"></td>		
+	</table>
+
+	<script type="text/javascript"src="jsfiles/WorkOutCalc.js"></script>
+</body>
+</html>
